@@ -12,6 +12,7 @@
 
         *{
             box-sizing: border-box;
+            font-family: 微軟正黑體;
         }
 
         @font-face{
@@ -61,8 +62,7 @@
             height: 75px;
             width: 100px;
             float: left;
-            line-height: 75px;
-            font-family: 微軟正黑體;
+            line-height: 75px;            
             font-weight: bold;
             color: rgb(58, 57, 35);
             font-size: 15pt;
@@ -245,6 +245,65 @@
             bottom: 10px;
         }
 
+        .new{        
+            text-align: center;        
+        }
+
+        .new .title{
+            font-size: 80pt;
+            font-family: tang;
+            color: rgb(121, 51, 25);
+        }
+
+        .new .news{
+            width: 100%;
+            max-width: 1140px;
+            height: 220px;            
+            margin: 10px auto;
+            background-color: rgb(255, 251, 212);
+            box-shadow:0px 2px 12px -2px rgba(102, 102, 0, 0.7);
+        }
+
+        .new .date{
+            float: left;
+            padding-left: 30px;
+        }        
+
+        .new .date p{
+            font-size: 20pt;            
+            color: rgb(62, 74, 82);  
+            margin: 0; 
+            font-weight: bold;         
+        }
+
+        .new .date span{
+            font-size: 93pt;
+            font-weight: lighter;           
+            color: rgb(62, 74, 82);   
+        }
+
+        .new .thing{
+            width: 820px;
+            height: 220px;
+            float: right;
+            padding: 20px 50px;
+        }
+
+        .new .thing span{
+            font-size: 22pt;
+            font-weight: bold;
+            
+        }
+
+        .new .thing p{
+            font-size: 20pt;
+            font-weight: normal;
+            color: rgb(163, 96, 44);  
+            margin: 0;    
+            text-align: left;
+                 
+        }
+
     </style>
 </head>
 <body>
@@ -267,7 +326,7 @@
         <div class="my-slider">
             <ul>                
                 <li><img src="img/slider1.jpg" alt=""></li>
-                <li>Another slide</li>
+                <li><img src="img/cake_now.jpg" alt=""></li>
                 <li>My last slide</li>
             </ul>
         </div>
@@ -318,7 +377,38 @@
             </div>
         </div>   
     </div>
-    
+<!-- 最新消息部分 -->
+    <div class="new">
+        <div class="title">最新消息</div>
+
+        <div class="news">
+            <div class="date">
+                <p><span>01</span><br>NAV.2017</p>
+            </div>
+            <div class="thing">
+                <p><span>產品更動公告</span><br><br>隨著冬季的到來，全新產品「冬季莓果紅色戀歌」上架，趕快一起來嘗鮮吧！</p>
+            </div>
+        </div>
+
+        <div class="news">
+            <div class="date">
+                <p><span>15</span><br>OCT.2017</p>
+            </div>
+            <div class="thing">
+                <p><span>產品更動公告</span><br><br>秋季即將結束，秋季專屬的商品「秋季番薯黃金回憶」也將於十月三十一日後下架，想品嘗的朋友請把握時間，以免錯過最後的機會喔。</p>
+            </div>
+        </div>
+
+        <div class="news">
+            <div class="date">
+                <p><span>03</span><br>OCT.2017</p>
+            </div>
+            <div class="thing">
+                <p><span>店休公告</span><br><br>十月十日為國定假日，本店當日公休一天。如有不便，敬請見諒。</p>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both"></div>
 
 
 

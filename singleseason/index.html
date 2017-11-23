@@ -39,25 +39,25 @@
             z-index: 3000;
         }
 
-        .navbar{
+        .header .navbar{
             width: 100%;
             height: 135px;
             max-width: 1140px;
             margin: auto;            
         }
 
-        .logo{
+        .header .logo{
             float: left;
             cursor: pointer; 
         }
 
-        .linkbtn{
+        .header .linkbtn{
             height: 135px;
             width: 560px;
             float: right;
         }
 
-        .btn{
+        .header .btn{
             height: 75px;
             width: 100px;
             float: left;
@@ -73,7 +73,7 @@
             
         }
 
-        .btn img{
+        .header .btn img{
             height: 30px;
         }
 
@@ -83,32 +83,32 @@
         }
 
         .index .title{
-            padding-top: 50px;
+            padding-top: 30px;
             font-size: 55pt;
             font-family: Castellar;
             color: rgb(234, 84, 124);
         }
 
         .index .subtitle{
-            padding-top: 10px;
+            padding-top: 5px;
             font-size: 40pt;
             font-family: Castellar;
             color: rgb(86, 56, 66);
             letter-spacing: 7px;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
 
-        .my-slider{
+        .index .my-slider{
             width: 100%;
             height: 610px;
         }
         
-        .my-slider img{
+        .index .my-slider img{
             max-width: 100%;
             height: auto;
         }
         
-        .unslider-arrow{
+        .index .unslider-arrow{
             top: 680px;            
         }
 
@@ -134,7 +134,7 @@
             color: rgb(204, 0, 51);
         }
 
-        .contain{
+        .pru .contain{
             width: 100%;
             max-width: 1140px;
             height: 585px;
@@ -142,7 +142,7 @@
             margin: 30px auto;            
         }
 
-        .pic{
+        .pru .pic{
             /* flex: 1; */
             height: 585px;
             position: relative;
@@ -150,7 +150,7 @@
             margin: auto;
         }
 
-        .picword{
+        .pru .picword{
             height: 225px;
             width: 100%;
             position: absolute;
@@ -159,7 +159,7 @@
             text-align: left;
         }
 
-        .picword p{
+        .pru .picword p{
             font-family: tea;
             color: rgb(14, 39, 63);
             font-size: 20pt;
@@ -169,13 +169,89 @@
             margin: 0;
         }
 
+        .about{        
+            text-align: center;        
+        }
+
+        .about .title{
+            font-size: 80pt;
+            font-family: tang;
+            color: rgb(221, 54, 130);
+        }
+
+        .about hr{
+            width: 360px;
+            margin-top: -10px;            
+            color: rgb(49, 26, 29) ;
+        }
+
+        .about .subtitle{
+            font-size: 40pt;
+            font-family: tang;
+            color: rgb(53, 18, 14);
+        }
+
+        .about .contain{
+            width: 100%;            
+            height: 585px;            
+            margin: 30px auto;
+            background-color: rgb(255, 250, 182); 
+            padding: 41px 0;           
+        }
+
+        .about .card{
+            height: 503px;                       
+            width: 1024px;           
+            background-color: rgba(255, 255, 255, 0.7);
+            margin: 0px auto;
+            display: flex;                       
+        }
+
+        .about .pic{
+            flex: 1;
+            padding: 20px;            
+        }
+
+        .about .pic img{            
+            width: 100%;
+            height: 461px;
+        }
+
+        .about .word{
+            flex: 1.618;
+            position: relative;
+        }
+
+        .about p{
+            text-align: left;
+            font-family: tea;
+            color: rgb(52, 18, 22);
+            font-size: 20pt;
+            padding: 20px;
+            line-height: 30pt;
+            letter-spacing: 0px;
+            margin: 0;
+        }
+
+        .about span{
+            font-family: tang;
+            font-size: 30pt;
+            color:rgb(255, 0, 51);
+        }
+
+        .about .word img{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+
     </style>
 </head>
 <body>
 <!-- NAVBAR部分 -->
     <div class="header">
         <div class="navbar">
-            <div class="logo"><img src="img/logo.png" alt=""></div>
+            <div class="logo"><a href="https://thereunder.github.io/singleseason/"><img src="img/logo.png" alt=""></a></div>
             <div class="linkbtn">
                 <div class="btn"><img src="img/btnflag.png" alt="">本季蛋糕</div>
                 <div class="btn"><img src="img/btnflag.png" alt="">關於我們</div>
@@ -224,8 +300,25 @@
             </div>
         </div>
     </div>
-
-
+<!-- 關於我們部分 -->
+    <div class="about">
+        <div class="title">關於我們</div>
+        <hr>
+        <div class="subtitle">Single Season的理念</div>
+        <div class="contain">
+            <div class="card">
+                <div class="pic"><img src="img/abpc-09.jpg" alt=""></div>
+                <div class="word">
+                    <p><span>起源</span> <br>
+                    快樂其實很簡單，不需要繁複的手續，也不用艱深的技巧，單純的事物就能引起快樂的共鳴。Single Season把這份純真還原在蛋糕上，我們不著墨於蛋糕種類的多寡，我們相信用簡單專一的態度，
+                    才能做出讓人快樂的蛋糕。每一季Single Season只會推出一款選用當季食材的蛋糕，或許不花俏，但歷經千錘百鍊的美味不會騙人，適合想要純粹的你，誠摯邀請您來品嘗我們的執著，享受piece of cake的快樂!
+                    </p>
+                    <img src="img/sign-10.png" alt="">
+                </div>                
+            </div>
+        </div>   
+    </div>
+    
 
 
 

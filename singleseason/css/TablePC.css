@@ -1,0 +1,366 @@
+@media screen and (max-width: 1024px) {
+    
+    body{
+        margin: 0;
+        padding: 0; 
+    }
+
+    .header{
+        width: 100%;
+        height: 135px;
+        background-color: rgb(252, 255, 146);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3000;
+    }
+
+    .header .navbar{
+        width: 100%;
+        height: 135px;
+        max-width: 1140px;
+        margin: auto;
+        position: relative;
+        text-align: center;                       
+    }
+
+    .header .logo{
+        width: 375px;
+        cursor: pointer;
+        display: block; 
+    }
+
+        .header .linkbtn{
+            height: 135px;
+            width: 600px;
+            right: 0;
+            position: absolute;
+            display: inline-block;
+        }
+
+        .header .btn{
+            height: 75px;
+            width: 100px;
+            display: inline-block;
+            line-height: 75px;            
+            font-weight: bold;
+            color: rgb(58, 57, 35);
+            font-size: 15pt;
+            margin: 30px 0;
+            cursor: pointer; 
+            margin-left:30px;
+            margin-right: 10px;  
+            
+        }
+
+        .header .btn img{
+            height: 30px;
+        }
+
+        .index{
+            margin-top: 135px;
+            text-align: center;
+        }
+
+        .index .title{
+            padding-top: 30px;
+            font-size: 55pt;
+            font-family: Castellar;
+            color: rgb(234, 84, 124);
+        }
+
+        .index .subtitle{
+            padding-top: 5px;
+            font-size: 40pt;
+            font-family: Castellar;
+            color: rgb(86, 56, 66);
+            letter-spacing: 7px;
+            margin-bottom: 10px;
+        }
+
+        .index .my-slider{
+            width: 100%;
+            height: 600px;
+        }
+        
+        .index .my-slider img{
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .index .unslider-arrow{
+            bottom: 0px;            
+        }
+
+        .pru{
+            text-align: center;
+        }
+
+        .pru .title{
+            font-size: 80pt;
+            font-family: tang;
+            color: rgb(208, 136, 59);
+        }
+
+        .pru hr{
+            width: 360px;
+            margin-top: -10px;            
+            color: rgb(78, 113, 149) ;
+        }
+
+        .pru .subtitle{
+            font-size: 40pt;
+            font-family: tang;
+            color: rgb(204, 0, 51);
+        }
+
+        .pru .contain{
+            width: 100%;
+            max-width: 1140px;
+            height: 585px;
+            display: flex;
+            margin: 30px auto;            
+        }
+
+        .pru .pic{            
+            height: 585px;
+            position: relative;
+            width: 250px;
+            margin: auto;
+        }
+
+        .pru .picword{
+            height: 225px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.7);
+            text-align: left;
+        }
+
+        .pru .picword p{
+            font-family: tea;
+            color: rgb(14, 39, 63);
+            font-size: 20pt;
+            padding: 10px;
+            line-height: 24pt;
+            letter-spacing: 3px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .about{        
+            text-align: center;        
+        }
+
+        .about .title{
+            font-size: 80pt;
+            font-family: tang;
+            color: rgb(221, 54, 130);
+        }
+
+        .about hr{
+            width: 360px;
+            margin-top: -10px;            
+            color: rgb(49, 26, 29) ;
+        }
+
+        .about .subtitle{
+            font-size: 40pt;
+            font-family: tang;
+            color: rgb(53, 18, 14);
+        }
+
+        .about .contain{
+            width: 100%;            
+            height: 585px;            
+            margin: 30px auto;
+            background-color: rgb(255, 250, 182); 
+            padding: 41px 0;           
+        }
+
+        .about .card{
+            height: 503px;                       
+            width: 1024px;           
+            background-color: rgba(255, 255, 255, 0.7);
+            margin: 0px auto;
+            display: flex;                       
+        }
+
+        .about .pic{
+            flex: 1;
+            padding: 20px;            
+        }
+
+        .about .pic img{            
+            width: 100%;
+            height: 461px;
+        }
+
+        .about .word{
+            flex: 1.618;
+            position: relative;
+        }
+
+        .about p{
+            text-align: left;
+            font-family: tea;
+            color: rgb(52, 18, 22);
+            font-size: 20pt;
+            padding: 20px;
+            line-height: 30pt;
+            letter-spacing: 0px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .about span{
+            font-family: tang;
+            font-size: 30pt;
+            color:rgb(255, 0, 51);
+            font-weight: normal;
+        }
+
+        .about .word img{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .new{        
+            text-align: center; 
+            margin-bottom: 20px;                  
+        }
+
+        .new .title{
+            font-size: 80pt;
+            font-family: tang;
+            color: rgb(121, 51, 25);
+        }
+
+        .new .news{
+            width: 100%;
+            max-width: 1140px;
+            height: 220px;            
+            margin: 10px auto;
+            background-color: rgb(255, 251, 212);
+            box-shadow:0px 2px 12px -2px rgba(102, 102, 0, 0.7);
+        }
+
+        .new .date{
+            float: left;
+            padding-left: 30px;
+            width: 20%;
+        }        
+
+        .new .date p{
+            font-size: 20pt;            
+            color: rgb(62, 74, 82);  
+            margin: 0; 
+            font-weight: bold;         
+        }
+
+        .new .date span{
+            font-size: 93pt;
+            font-weight: lighter;           
+            color: rgb(62, 74, 82);   
+        }
+
+        .new .thing{
+            width: 80%;
+            height: 220px;
+            float: right;
+            padding: 20px 50px;
+
+        }
+
+        .new .thing span{
+            font-size: 22pt;
+            font-weight: bold;            
+        }
+
+        .new .thing p{
+            font-size: 20pt;
+            font-weight: normal;
+            color: rgb(163, 96, 44);  
+            margin: 0;    
+            text-align: left;
+                 
+        }
+
+        .shop{
+            text-align: center;
+            background-color: rgb(252, 240, 154);
+        }
+
+        .shop .title{
+            font-size: 80pt;
+            font-family: tang;
+            color: rgb(48, 42, 2);
+            padding-top: 30px; 
+        }
+
+        .shop .contain{
+            width: 100%;
+            max-width: 1140px;
+            display: flex;
+            padding: 50px;
+            margin: auto;
+        }
+
+        .shop .word{
+            height: 590px;
+            width: 38%;           
+            flex: 1;
+            padding: 0 20px;
+            text-align: left;
+        }
+
+        .shop #map{
+            height: 640px;
+            width: 62%;
+            flex: 1.618;
+        }
+
+        .shop .word span{
+            font-size: 60pt;
+            font-family: tang;
+        }
+
+        .shop .word p{
+            font-size: 24pt;
+        }
+
+        .footer{
+            width: 100%;
+            height: 100px;
+            background-color: rgb(188, 188, 188);
+            text-align: center;
+        }
+
+        .footer p{
+            color: rgb(76, 70, 36);
+            line-height: 100px;
+            margin: 0;
+        }
+
+        .top{
+            background-color: rgba(0, 0, 0, 0.603);
+            color: white;
+            width: 50px;
+            height: 40px;
+            font-size: 14px;
+            text-align: center;
+            line-height: 40px;
+            position: fixed;
+            right: 50px;
+            bottom: 30px;
+            opacity: 0.8;
+            border-radius: 50%;
+            font-family: Castellar;
+        }
+
+        .top:hover {
+            cursor: pointer;
+        }
+}

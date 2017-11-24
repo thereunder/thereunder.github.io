@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Single Season</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/unslider-dots.css">
     <link rel="stylesheet" href="css/unslider.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/TablePC.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">    
+    <link rel="stylesheet" href="css/hamburgers.css">
     <style>
 
         *{
@@ -31,59 +32,34 @@
             padding: 0; 
         }
 
-        .header{
-            width: 100%;
-            height: 135px;
-            background-color: rgb(252, 255, 146);
+        .navbar{
+            padding: 0;
             position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 3000;
-        }
-
-        .header .navbar{
             width: 100%;
-            height: 135px;
-            max-width: 1140px;
-            margin: auto;
-            position: relative;                       
+            top: 0;
+            z-index: 5000;
         }
 
-        .header .logo{
-            width: 375px;
-            cursor: pointer;
-            display: inline-block; 
-        }
-
-        .header .linkbtn{
-            height: 135px;
-            width: 600px;
-            right: 0;
-            position: absolute;
-            display: inline-block;
-        }
-
-        .header .btn{
-            height: 75px;
-            width: 100px;
-            display: inline-block;
-            line-height: 75px;            
+        .navbar .nav-item{
+            font-size: 20px;
             font-weight: bold;
-            color: rgb(58, 57, 35);
-            font-size: 15pt;
-            margin: 30px 0;
+            margin-left: 15px;
+            height: 40px;     
             cursor: pointer; 
-            margin-left:30px;
-            margin-right: 10px;  
-            
+            margin-top: 15px;      
         }
 
-        .header .btn img{
+        .navbar .nav-item img{
             height: 30px;
         }
 
+        .navbar-toggler{
+            color: rgb(58, 57, 35) !important;
+            border-color: rgb(58, 57, 35) !important;
+        }
+    
         .index{
-            margin-top: 135px;
+            margin-top: 131px;
             text-align: center;
         }
 
@@ -105,16 +81,17 @@
 
         .index .my-slider{
             width: 100%;
-            height: 600px;
+            height: 610px;            
         }
         
         .index .my-slider img{
-            max-width: 100%;
-            height: auto;
+            min-width: 1437px;
+            height: 610px;
+            
         }
         
         .index .unslider-arrow{
-            bottom: 0px;            
+            top: 600px;            
         }
 
         .pru{
@@ -387,28 +364,54 @@
 
         .top:hover {
             cursor: pointer;
+        }      
+        
+        @media (min-width: 1024px) {
+            .hamburger{
+                display: none;
+            }                
         }
 
         
 
-
     </style>
+    
+    <link rel="stylesheet" href="css/TablePC.css">
+
+
 </head>
 <body>
 
     <div class="top">TOP</div>
 <!-- NAVBAR部分 -->
-    <div class="header">
-        <div class="navbar">
-            <div class="logo"><a href="https://thereunder.github.io/singleseason/"><img src="img/logo.png" alt=""></a></div>
-            <div class="linkbtn">
-                <div class="btn"><img src="img/btnflag.png" alt="">本季蛋糕</div>
-                <div class="btn"><img src="img/btnflag.png" alt="">關於我們</div>
-                <div class="btn"><img src="img/btnflag.png" alt="">最新消息</div>
-                <div class="btn"><img src="img/btnflag.png" alt="">據點資訊</div>
+    <nav class="navbar navbar-expand-lg navbar-dark" style=" background-color:rgb(252, 255, 146)">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <a href="首頁連結網址"><img class="logo" src="img/logo.png" alt=""></a> 
+            </a>
+            <button class="hamburger hamburger--spin " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <img src="img/btnflag.png" alt="">本季蛋糕
+                    </li>
+                    <li class="nav-item">
+                        <img src="img/btnflag.png" alt="">關於我們
+                    </li>
+                    <li class="nav-item">
+                        <img src="img/btnflag.png" alt="">最新消息
+                    </li>
+                    <li class="nav-item">
+                        <img src="img/btnflag.png" alt="">據點資訊
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
 <!-- 首頁標題+SLIDER部分 -->
     <div class="index">
         <div class="title">SINGLE SEASON</div>
@@ -526,6 +529,8 @@
 
 
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/unslider-min.js"></script>
     
     <script>
@@ -568,6 +573,11 @@
         // 點擊回到TOP部分
         $(".top").click(function () {
             $(window).scrollTop(0);
+        });
+        // 漢堡條部分
+        var $hamburger = $(".hamburger");
+        $hamburger.on("click", function(e) {
+            $hamburger.toggleClass("is-active");    
         });
 
     </script>

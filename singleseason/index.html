@@ -100,7 +100,7 @@
 
         .index .my-slider{
             width: 100%;
-            height: 610px;
+            height: 600px;
         }
         
         .index .my-slider img{
@@ -109,7 +109,7 @@
         }
         
         .index .unslider-arrow{
-            top: 680px;            
+            bottom: 0px;            
         }
 
         .pru{
@@ -142,8 +142,7 @@
             margin: 30px auto;            
         }
 
-        .pru .pic{
-            /* flex: 1; */
+        .pru .pic{            
             height: 585px;
             position: relative;
             width: 250px;
@@ -164,9 +163,10 @@
             color: rgb(14, 39, 63);
             font-size: 20pt;
             padding: 10px;
-            line-height: 26pt;
+            line-height: 24pt;
             letter-spacing: 3px;
             margin: 0;
+            font-weight: bold;
         }
 
         .about{        
@@ -231,12 +231,14 @@
             line-height: 30pt;
             letter-spacing: 0px;
             margin: 0;
+            font-weight: bold;
         }
 
         .about span{
             font-family: tang;
             font-size: 30pt;
             color:rgb(255, 0, 51);
+            font-weight: normal;
         }
 
         .about .word img{
@@ -268,6 +270,7 @@
         .new .date{
             float: left;
             padding-left: 30px;
+            width: 20%;
         }        
 
         .new .date p{
@@ -284,16 +287,16 @@
         }
 
         .new .thing{
-            width: 820px;
+            width: 80%;
             height: 220px;
             float: right;
             padding: 20px 50px;
+
         }
 
         .new .thing span{
             font-size: 22pt;
-            font-weight: bold;
-            
+            font-weight: bold;            
         }
 
         .new .thing p{
@@ -361,9 +364,32 @@
             margin: 0;
         }
 
+        .top{
+            background-color: rgba(0, 0, 0, 0.603);
+            color: white;
+            width: 50px;
+            height: 40px;
+            font-size: 14px;
+            text-align: center;
+            line-height: 40px;
+            position: fixed;
+            right: 50px;
+            bottom: 30px;
+            opacity: 0.8;
+            border-radius: 50%;
+            font-family: Castellar;
+        }
+
+        .top:hover {
+            cursor: pointer;
+        }
+
+
     </style>
 </head>
 <body>
+
+    <div class="top">TOP</div>
 <!-- NAVBAR部分 -->
     <div class="header">
         <div class="navbar">
@@ -383,8 +409,8 @@
         <div class="my-slider">
             <ul>                
                 <li><img src="img/slider1.jpg" alt=""></li>
-                <li><img src="img/cake_now.jpg" alt=""></li>
-                <li>My last slide</li>
+                <li><img src="img/slider2.jpg" alt=""></li>
+                <li><img src="img/slider3.jpg" alt=""></li>
             </ul>
         </div>
     </div>
@@ -466,7 +492,7 @@
         </div>
     </div>
     <div style="clear:both"></div>
-
+<!-- 據點資訊部分 -->
     <div class="shop">
         <div class="title">據點資訊</div>
         <div class="contain">
@@ -486,7 +512,7 @@
             <div id="map"></div>
         </div>        
     </div>
-
+<!-- FOOTER部分 -->
     <div class="footer">
         <p>Copyright © 2016 Single Season Cake Co.,Ltd</p>
     </div>
@@ -494,7 +520,9 @@
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/unslider-min.js"></script>
+    
     <script>
+        // SLIDER部分
 		jQuery(document).ready(function($) {
 			$('.my-slider').unslider({
                 autoplay: true,
@@ -506,7 +534,7 @@
                 }
             });            
 		});
-
+        // GMAP部分
         function initMap() {
             var uluru = { lat: 24.104227, lng: 120.683524 };
             var map = new google.maps.Map(document.getElementById('map'), {
@@ -518,11 +546,28 @@
                 map: map
             });
         }
+        // TOP隱藏部分
+        $(window).scroll(function () {
+
+            var scrtop = $(window).scrollTop();
+
+            if (scrtop > 500) {
+                $('.top').fadeIn(200);
+            } else {
+                $('.top').fadeOut(200);
+            };
+
+        })
+        // 點擊回到TOP部分
+        $(".top").click(function () {
+            $(window).scrollTop(0);
+        });
 
     </script>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADUH4so4XsVPgdzeJ93BBmjUcea9HbrWI&callback=initMap">
     </script>
+
     
 </body>
 </html>

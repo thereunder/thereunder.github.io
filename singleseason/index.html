@@ -537,13 +537,12 @@
         // $(".top").click(function () {
         //     $(window).scrollTop(0);
         // });
-        $('.top').click(function() {		
-		var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
-		$body.animate({
-			scrollTop: 0
-		}, 600);
- 
-		return false;
+        $('.top').click(function(){		
+		    var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		    $body.animate({
+			    scrollTop: 0
+		    }, 600); 
+		    return false;
 	    });
         // 漢堡條部分
         var $hamburger = $(".hamburger");
@@ -551,8 +550,36 @@
             $hamburger.toggleClass("is-active");    
         });
         // NAV項目點擊效果
-        $(".nav-item_a").click(function () {
-            $(window).scrollTop();
+        $('.nav-item_a').click(function(){		
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: 850
+            }, 600);     
+            return false;
+        });
+
+        $('.nav-item_b').click(function(){		
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: 1700
+            }, 600);     
+            return false;
+        });
+
+        $('.nav-item_c').click(function(){		
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: 2550
+            }, 600);     
+            return false;
+        });
+
+        $('.nav-item_d').click(function(){		
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: 3450
+            }, 600);     
+            return false;
         });
 
     </script>

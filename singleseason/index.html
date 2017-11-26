@@ -48,35 +48,91 @@
             color: rgb(58, 57, 35) !important;
             border-color: rgb(58, 57, 35) !important;
         }
+
+        .nav-item{
+            display: none;
+        }
+
+        @media screen and (min-width: 1024px){
+            .pc_a{
+                display: list-item;
+            }
+            .pc_b{
+                display: list-item;
+            }
+            .pc_c{
+                display: list-item;
+            }
+            .pc_d{
+                display: list-item;
+            }
+        }
+        
+        @media screen and (max-width: 1023px) and (min-width: 768px) {
+            .ta_a{
+                display: list-item;
+            }
+            .ta_b{
+                display: list-item;
+            }
+            .ta_c{
+                display: list-item;
+            }
+            .ta_d{
+                display: list-item;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .ta_a{
+                display: list-item;
+            }
+            .ta_b{
+                display: list-item;
+            }
+            .ta_c{
+                display: list-item;
+            }
+            .ta_d{
+                display: list-item;
+            }
+        }
     
         .index{
-            margin-top: 131px;
+            margin-top: 100px;
             text-align: center;
         }        
 
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 1023px){
             .index .title{
                 padding-top: 0px;
                 font-size: 35pt;
-                margin-top: -10px;
-            }
-        }      
+                margin-top: 10px;
+            }            
+        }
+        
+        @media screen and (min-width: 1024px){
+            #ta{
+                display: none;
+            }            
+        }
 
 
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 1023px){
             .index .my-slider{
                 width: 100%;
                 height: auto;                            
             }
         }
+
         .index .my-slider img{
             min-width: 1437px;
             height: 610px;            
         }
 
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 1023px){
             .index .my-slider img{
-                width: 100%;
+                width: 768px;
                 height: auto;
                 min-width: 768px;
             }
@@ -87,12 +143,12 @@
             color: rgb(59, 59, 34) !important;         
         }
 
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 1023px){
             .index .unslider-arrow{
                 display: none;
             }
 
-            .unslider-nav{
+            .index .unslider-nav{
                 display: none;
             }
         }
@@ -104,9 +160,9 @@
         .pru .contain{
             width: 100%;
             max-width: 1140px;
-            height: 586px;
-            display: flex;
-            margin: 30px auto;            
+            height: 586px;            
+            margin: 30px auto;    
+            display: flex;        
         }
 
         .pru .pic{            
@@ -114,6 +170,7 @@
             position: relative;
             width: 250px;
             margin: auto;
+            
         }
 
         .pru .picword{
@@ -154,7 +211,7 @@
             background-color: rgba(255, 255, 255, 0.7);
             margin: 0px auto; 
             display: inline-block;
-                                             
+            box-shadow: 2px 2px 12px -2px rgb(58, 57, 35);
         }
         
         .new{        
@@ -162,7 +219,7 @@
             margin-bottom: 20px;                  
         }
 
-         .new .news{
+        .new .news{
             width: 100%;
             max-width: 1140px;
             height: 220px;            
@@ -221,10 +278,7 @@
         }
 
         .shop .title{
-            font-size: 80pt;
-            font-family: tang;
-            color: rgb(48, 42, 2);
-            padding-top: 30px; 
+            padding-top: 30px;
         }
 
         .shop .contain{
@@ -274,11 +328,11 @@
         .top{
             background-color: rgba(0, 0, 0, 0.603);
             color: white;
-            width: 50px;
-            height: 40px;
-            font-size: 14px;
+            width: 70px;
+            height: 60px;
+            font-size: 20px;
             text-align: center;
-            line-height: 40px;
+            line-height: 60px;
             position: fixed;
             right: 50px;
             bottom: 30px;
@@ -299,7 +353,7 @@
             }                
         }
 
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 1023px){
             #pc{
                 display: none;
             }
@@ -333,16 +387,40 @@
             </button>        
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item nav-item_a">
+                    <li class="nav-item pc_a">
                         <img src="img/btnflag.png" alt="">本季蛋糕
                     </li>
-                    <li class="nav-item nav-item_b">
+                    <li class="nav-item pc_b">
                         <img src="img/btnflag.png" alt="">關於我們
                     </li>
-                    <li class="nav-item nav-item_c">
+                    <li class="nav-item pc_c">
                         <img src="img/btnflag.png" alt="">最新消息
                     </li>
-                    <li class="nav-item nav-item_d">
+                    <li class="nav-item pc_d">
+                        <img src="img/btnflag.png" alt="">據點資訊
+                    </li>
+                    <li class="nav-item ta_a">
+                        <img src="img/btnflag.png" alt="">本季蛋糕
+                    </li>
+                    <li class="nav-item ta_b">
+                        <img src="img/btnflag.png" alt="">關於我們
+                    </li>
+                    <li class="nav-item ta_c">
+                        <img src="img/btnflag.png" alt="">最新消息
+                    </li>
+                    <li class="nav-item ta_d">
+                        <img src="img/btnflag.png" alt="">據點資訊
+                    </li>
+                    <li class="nav-item ph_a">
+                        <img src="img/btnflag.png" alt="">本季蛋糕
+                    </li>
+                    <li class="nav-item ph_b">
+                        <img src="img/btnflag.png" alt="">關於我們
+                    </li>
+                    <li class="nav-item ph_c">
+                        <img src="img/btnflag.png" alt="">最新消息
+                    </li>
+                    <li class="nav-item ph_d">
                         <img src="img/btnflag.png" alt="">據點資訊
                     </li>
                 </ul>
@@ -353,7 +431,7 @@
     
 <!-- 首頁標題+SLIDER部分 -->
     <div class="index">
-        <div class="title"><img src="img/TITLE_00_PC.png" alt=""></div>        
+        <div class="title"><img id="pc" src="img/TITLE_00_PC.png" alt=""><img id="ta" src="img/TITLE_00_TA.png" alt=""></div>        
         <div class="my-slider">
             <ul>                
                 <li><img src="img/slider1.jpg" alt=""></li>
@@ -363,6 +441,7 @@
         </div>
     </div>
 
+    <!-- PC -->
     <div id="pc">
     <!-- 本季蛋糕部分 -->
         <div class="pru">        
@@ -457,38 +536,99 @@
         </div>
     </div>
 
+    <!-- Table -->
     <div id="table">
-        <div class="tapru">
-            <div class="title">本季蛋糕</div>
-            <hr>
-            <div class="subtitle">冬季莓果紅色戀歌</div>
+    <!-- 本季蛋糕部分 -->
+        <div class="tapru">        
+            <div class="title"><img src="img/TITLE_01_TA.png"alt=""></div>                   
             <div class="contain">
-                <div class="pic">
-                    <img src="img/propc-05.jpg" alt="">
+                <div class="pic"><img src="img/prota-11.jpg" alt="">
                     <div class="picword">
                         <p>蓬鬆海綿蛋糕胚，口感綿密層次多，純手工的紮實，每一口都能帶給您最溫柔的感動。</p>
                     </div>
                 </div>
-                <div class="pic">
-                    <img src="img/propc-06.jpg" alt="">
+                <div class="pic"><img src="img/prota-12.jpg" alt="">
                     <div class="picword">
                         <p>特製鮮奶油，加入進口瑞士巧克力，香醇略帶苦澀的口感讓蛋糕甜而不膩，嘗起來更加美味。</p>
                     </div>
                 </div>
-                <div class="pic">
-                    <img src="img/propc-07.jpg" alt="">
+                <div class="pic"><img src="img/prota-13.jpg" alt="">
                     <div class="picword">
-                        <p>特選莓果，香甜中帶著微微酸澀，幸福滋味讓人重返初戀時光，在寒冬中回想起掌心的溫暖。</p>
+                        <p>特選莓果，香甜帶著微微酸澀，幸福滋味讓人重返初戀時光，在寒冬中回想起掌心的溫暖。</p>
                     </div>
                 </div>
-                <div class="pic">
-                    <img src="img/propc-08.jpg" alt="">
+                <div class="pic"><img src="img/prota-14.jpg" alt="">
                     <div class="picword">
                         <p>精選顆顆飽滿的大湖草莓，酸中帶甜的內餡不斷挑動味蕾，讓幸福在舌尖上跳躍。</p>
                     </div>
                 </div>
             </div>
         </div>
+    <!-- 關於我們部分 -->
+        <div class="taabout">
+            <div class="title"><img src="img/TITLE_02_TA.png" alt=""></div>
+            <div class="tain">
+                <div class="card">                    
+                    <img src="img/TITLE_02-1_TA.png" alt="">                                
+                </div>
+            </div>   
+        </div>
+    <!-- 最新消息部分 -->
+        <div class="tanew">
+                <div class="title"><img src="img/TITLE_03_TA.png" alt=""></div>
+                <div class="news">
+                    <div class="date">
+                        <p><span>01</span><br>NAV.2017</p>
+                    </div>
+                    <div class="thing">
+                        <p><span>產品更動公告</span><br>隨著冬季的到來，全新產品「冬季莓果紅色戀歌」上架，趕快一起來嘗鮮吧！</p>
+                    </div>
+                </div>
+    
+                <div class="news">
+                    <div class="date">
+                        <p><span>15</span><br>OCT.2017</p>
+                    </div>
+                    <div class="thing">
+                        <p><span>產品更動公告</span><br>秋季即將結束，秋季專屬的商品「秋季番薯黃金回憶」也將於十月三十一日後下架，想品嘗的朋友請把握時間，以免錯過最後的機會喔。</p>
+                    </div>
+                </div>
+    
+                <div class="news">
+                    <div class="date">
+                        <p><span>03</span><br>OCT.2017</p>
+                    </div>
+                    <div class="thing">
+                        <p><span>店休公告</span><br>十月十日為國定假日，本店當日公休一天。如有不便，敬請見諒。</p>
+                    </div>
+                </div>
+        </div>
+        <div style="clear:both"></div>
+    <!-- 據點資訊部分 -->
+        <div class="tashop">
+            <div class="title"><img src="img/TITLE_04_TA.png" alt=""></div>            
+            <div class="contain">
+                <div class="word">
+                    <img src="img/TITLE_04-1_TA.png" alt="">
+                    <p>
+                    <br>
+                    地址 :
+                    台中市大里區德芳南路12號<br>
+                    <br>
+                    電話 :
+                    04-22242224<br>
+                    <br>
+                    營業時間 :
+                    週二至週日11:00~21:00<br>
+                    </p>                    
+                </div>                
+            </div>        
+        </div>
+    <!-- FOOTER -->
+        <div class="tafooter">
+            <p>Copyright © 2016 Single Season Cake Co.,Ltd</p>
+        </div>
+    
     </div>
 
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -521,6 +661,7 @@
                 map: map
             });
         }
+        
         // TOP隱藏部分
         $(window).scroll(function () {
 
@@ -550,37 +691,64 @@
             $hamburger.toggleClass("is-active");    
         });
         // NAV項目點擊效果
-        $('.nav-item_a').click(function(){		
+        $('.navbar .pc_a').click(function(){		
             var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
             $body.animate({
-                scrollTop: 850
+                scrollTop: 820
+            }, 600);     
+            return false;
+        });
+        $('.navbar .pc_b').click(function(){		
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: 1670
+            }, 600);     
+            return false;
+        });
+        $('.navbar .pc_c').click(function(){		
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: 2520
+            }, 600);     
+            return false;
+        });
+        $('.navbar .pc_d').click(function(){		
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: 3400
+            }, 600);     
+            return false;
+        });
+        $('.navbar .ta_a').click(function(){		
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: 300
+            }, 600);     
+            return false;
+        });
+        $('.navbar .pc_b').click(function(){		
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: 1670
+            }, 600);     
+            return false;
+        });
+        $('.navbar .pc_c').click(function(){		
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: 2520
+            }, 600);     
+            return false;
+        });
+        $('.navbar .pc_d').click(function(){		
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: 3400
             }, 600);     
             return false;
         });
 
-        $('.nav-item_b').click(function(){		
-            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
-            $body.animate({
-                scrollTop: 1700
-            }, 600);     
-            return false;
-        });
-
-        $('.nav-item_c').click(function(){		
-            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
-            $body.animate({
-                scrollTop: 2550
-            }, 600);     
-            return false;
-        });
-
-        $('.nav-item_d').click(function(){		
-            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
-            $body.animate({
-                scrollTop: 3450
-            }, 600);     
-            return false;
-        });
+        
 
     </script>
 

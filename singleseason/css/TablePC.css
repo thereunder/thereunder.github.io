@@ -1,44 +1,25 @@
 .tapru{
-    text-align: center;
+    text-align: center;    
 }
 
-.tapru .title{
-    font-size: 80pt;
-    font-family: tang;
-    color: rgb(208, 136, 59);
-    margin-bottom: -30px;
-}
 
-.tapru hr{
-    width: 360px;
-    margin-top: -10px;            
-    color: rgb(78, 113, 149) ;
-}
-
-.tapru .subtitle{
-    font-size: 40pt;
-    font-family: tang;
-    color: rgb(204, 0, 51);
-    margin-top: -10px;
-}
 
 .tapru .contain{
-    width: 100%;
-    max-width: 1140px;
-    height: 585px;
-    display: flex;
-    margin: 30px auto;            
+    width: 100%; 
+    margin: 10px auto;     
+           
 }
 
 .tapru .pic{            
-    height: 585px;
+    height: 321px;
     position: relative;
-    width: 250px;
-    margin: auto;
+    width: 338px;
+    margin: 10px;
+    display: inline-block;
 }
 
 .tapru .picword{
-    height: 225px;
+    height: 122px;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -46,13 +27,124 @@
     text-align: left;
 }
 
-.tapru .picword p{
-    font-family: tea;
+.tapru .picword p{            
     color: rgb(14, 39, 63);
-    font-size: 20pt;
+    font-size: 17pt;
     padding: 10px;
-    line-height: 24pt;
-    letter-spacing: 3px;
     margin: 0;
     font-weight: bold;
+}
+
+.taabout{        
+    text-align: center;        
+}        
+
+.taabout .tain{
+    width: 100%;            
+    height: 594px;            
+    margin: auto;
+    background-color: rgb(255, 250, 182); 
+    padding: 20px;                       
+}
+
+.taabout .card{
+    height: 554px;                       
+    width: 100%;
+    max-width: 1024px;           
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 0px auto; 
+    display: inline-block;                                    
+}
+
+.tanew{        
+    text-align: center; 
+    margin: 30px 0;                  
+}
+
+.tanew .news{
+    width: 100%;    
+    height: 220px;            
+    margin: 10px auto;
+    background-color: rgb(255, 251, 212);
+    box-shadow:0px 2px 12px -2px rgba(102, 102, 0, 0.7);
+}
+
+.tanew .date{
+    float: left;
+    padding-left: 30px;
+    width: 20%;
+    margin-top: -12px;
+}        
+
+.tanew .date p{
+    font-size: 20pt;            
+    color: rgb(62, 74, 82);  
+    margin: 0; 
+    font-weight: bold;         
+}
+
+.tanew .date span{
+    font-size: 83pt;
+    font-weight: lighter;           
+    color: rgb(62, 74, 82); 
+       
+}
+
+.tanew .thing{
+    width: 80%;
+    height: 220px;
+    float: right;
+    padding: 0 50px;
+
+}
+
+.tanew .thing span{
+    font-size: 22pt;
+    font-weight: bold;
+    line-height: 2.9;            
+}
+
+.tanew .thing p{
+    font-size: 18pt;
+    font-weight: normal;
+    color: rgb(163, 96, 44);  
+    margin: 0;    
+    text-align: left;    
+}
+
+.tashop{
+    text-align: center;
+    background-color: rgb(252, 240, 154);
+}
+
+.tashop .title{
+    padding-top: 30px;
+}
+
+.tashop .contain{
+    width: 100%;  
+    padding: 50px;
+    margin: auto;
+}
+
+.tashop .word{    
+    width: 100%;
+    padding: 0 20px;
+}
+
+.tashop .word p{
+    font-size: 20pt;
+}
+
+.tafooter{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(188, 188, 188);
+    text-align: center;
+}
+
+.tafooter p{
+    color: rgb(76, 70, 36);
+    line-height: 100px;
+    margin: 0;
 }

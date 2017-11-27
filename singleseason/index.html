@@ -113,16 +113,16 @@
         }
 
         @media screen and (max-width: 767px) {
-            .ta_a{
+            .ph_a{
                 display: list-item;
             }
-            .ta_b{
+            .ph_b{
                 display: list-item;
             }
-            .ta_c{
+            .ph_c{
                 display: list-item;
             }
-            .ta_d{
+            .ph_d{
                 display: list-item;
             }
         }
@@ -911,6 +911,34 @@
             var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
             $body.animate({
                 scrollTop: 2850
+            }, 600);     
+            return false;
+        });
+        $('.navbar .ph_a').click(function(){		
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: 210
+            }, 600);     
+            return false;
+        });
+        $('.navbar .ph_b').click(function(){		
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: 800
+            }, 600);     
+            return false;
+        });
+        $('.navbar .ph_c').click(function(){		
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: 1150
+            }, 600);     
+            return false;
+        });
+        $('.navbar .ph_d').click(function(){		
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: 1630
             }, 600);     
             return false;
         });

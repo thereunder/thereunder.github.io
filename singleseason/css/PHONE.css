@@ -3,7 +3,7 @@
 }
 
 .phpru .title img{
-    width: 150px;
+    width: 170px;
     height: auto;
 }
 
@@ -26,3 +26,28 @@
     padding: 10px;        
 }
 
+.phabout{        
+    text-align: center;        
+}
+
+.phabout .title img{
+    width: 170px;
+    height: auto;
+}
+
+.phabout .tain{             
+    margin: 10px auto;
+    background-color: rgb(255, 250, 182); 
+    padding: 10px 5px;                       
+}
+
+.phabout .tain img{
+    width: 280px;
+    height: auto;
+    margin: 0;
+}
+
+.phabout .card{                           
+    width: 300px;
+    margin: 0 auto;                                         
+}

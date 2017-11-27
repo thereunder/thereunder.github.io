@@ -69,7 +69,7 @@
     height: 120px;            
     margin: 10px auto;
     background-color: rgb(255, 251, 212);
-    box-shadow:0px 0px 10px -2px rgba(102, 102, 0, 0.7);
+    box-shadow:0px 0px 7px -2px rgba(102, 102, 0, 0.7);
 }
 
 .phnew .date{

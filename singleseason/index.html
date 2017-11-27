@@ -763,7 +763,31 @@
             </div>
         </div>
         <div style="clear:both"></div>
-    
+    <!-- 據點資訊部分 -->
+        <div class="phshop">
+            <div class="title"><img src="img/TITLE_04_PC.png" alt=""></div>            
+            <div class="contain">
+                <div id="map3"></div>
+                <div class="word">
+                    <img src="img/TITLE_04-1_PC.png" alt="">
+                    <p>                    
+                    地址 :<br>
+                    台中市大里區德芳南路12號<br>
+                    <br>
+                    電話 :<br>
+                    04-22242224<br>
+                    <br>
+                    營業時間 :<br>
+                    週二至週日11:00~21:00<br>
+                    </p>                    
+                </div>                
+            </div>        
+        </div>
+    <!-- FOOTER -->
+        <div class="phfooter">
+            <p>Copyright © 2016 Single Season Cake Co.,Ltd</p>
+        </div>
+
     </div>
 
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -792,6 +816,10 @@
                 center: uluru
             });
             var map = new google.maps.Map(document.getElementById('map2'), {
+                zoom: 15,
+                center: uluru
+            });
+            var map = new google.maps.Map(document.getElementById('map3'), {
                 zoom: 15,
                 center: uluru
             });

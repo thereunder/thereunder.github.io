@@ -9,33 +9,20 @@
 
 .phpru .contain{
     width: 100%; 
-    margin: 10px auto;            
+    margin: 0 auto;            
 }
 
 .phpru .card{
+    border: 0;
+    height: 120px;
+    margin-top: 5px;
+}
+
+.phpru .card img{
     background-color: rgb(249, 248, 207);    
-    width: 350px;
-    margin: 10px auto;
-    height: 120px;    
+    width: 320px;
+    margin: 0 auto;
+    height: 120px;
+    padding: 10px;        
 }
 
-.phpru .pic{            
-    height: 98px;
-    position: relative;
-    width: 102px;
-    display: inline-block;
-}
-
-.phpru .picword{
-    height: 102px;
-    width: 218px;    
-    display: inline-block;
-    text-align: left;
-}
-
-.phpru .picword p{            
-    color: rgb(14, 39, 63);
-    font-size: 12pt;    
-    margin: 0;
-    font-weight: bold;
-}

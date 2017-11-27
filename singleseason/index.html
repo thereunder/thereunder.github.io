@@ -11,6 +11,16 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">    
     <link rel="stylesheet" href="css/hamburgers.css">
     <link rel="shortcut icon" href="img/singleseason-ico.ico">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110178850-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-110178850-1');
+    </script>
+
     <style>
 
         *{
@@ -127,8 +137,8 @@
         }
 
         .index .my-slider img{
-            min-width: 1437px;
-            height: 610px;            
+            width: 1024px;
+            height: 435px;            
         }
 
         @media screen and (max-width: 1023px){
@@ -140,7 +150,7 @@
         }
         
         .index .unslider-arrow{
-            top: 600px;   
+            top: 470px;   
             color: rgb(156, 156, 6) !important;         
         }
 
@@ -439,7 +449,7 @@
         <div class="title"><img id="pc" src="img/TITLE_00_PC.png" alt=""><img id="ta" src="img/TITLE_00_TA.png" alt=""></div>        
         <div class="my-slider">
             <ul>                
-                <li><img src="img/slider1.jpg" alt=""></li>
+                <li><img src="img/slider1-s.jpg" alt=""></li>
                 <li><img src="img/slider2.jpg" alt=""></li>
                 <li><img src="img/slider3.jpg" alt=""></li>
             </ul>
@@ -704,28 +714,28 @@
         $('.navbar .pc_a').click(function(){		
             var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
             $body.animate({
-                scrollTop: 820
+                scrollTop: 645
             }, 600);     
             return false;
         });
         $('.navbar .pc_b').click(function(){		
             var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
             $body.animate({
-                scrollTop: 1670
+                scrollTop: 1495
             }, 600);     
             return false;
         });
         $('.navbar .pc_c').click(function(){		
             var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
             $body.animate({
-                scrollTop: 2520
+                scrollTop: 2345
             }, 600);     
             return false;
         });
         $('.navbar .pc_d').click(function(){		
             var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
             $body.animate({
-                scrollTop: 3400
+                scrollTop: 3225
             }, 600);     
             return false;
         });

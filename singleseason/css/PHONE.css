@@ -3,6 +3,7 @@
 }
 
 .phpru .title img{
+    margin-top: 10px;
     width: 170px;
     height: auto;
 }
@@ -31,6 +32,7 @@
 }
 
 .phabout .title img{
+    margin-top: 10px;
     width: 170px;
     height: auto;
 }
@@ -50,4 +52,65 @@
 .phabout .card{                           
     width: 300px;
     margin: 0 auto;                                         
+}
+
+.phnew{        
+    text-align: center; 
+    margin: 30px 0;                  
+}
+
+.phnew .title img{    
+    width: 170px;
+    height: auto;
+}
+
+.phnew .news{
+    width: 320px;    
+    height: 120px;            
+    margin: 10px auto;
+    background-color: rgb(255, 251, 212);
+    box-shadow:0px 0px 15px -2px rgba(102, 102, 0, 0.7);
+}
+
+.phnew .date{
+    float: left;
+    padding-left: 20px;
+    width: 20%;
+    margin-top: 10px;
+}        
+
+.phnew .date p{
+    font-size: 8pt;            
+    color: rgb(62, 74, 82);  
+    margin: 0; 
+    font-weight: bold;         
+}
+
+.phnew .date span{
+    font-size: 36pt;
+    font-weight: lighter;           
+    color: rgb(62, 74, 82); 
+       
+}
+
+.phnew .thing{
+    width: 80%;
+    height: 120px;
+    float: right;
+    padding: 23px 10px 10px 20px;
+
+}
+
+.phnew .thing span{
+    font-size: 8px;
+    font-weight: bold;
+    line-height: 0.5;            
+}
+
+.phnew .thing p{
+    font-size: 3px;
+    font-weight: normal;
+    color: rgb(163, 96, 44);  
+    margin: 0;    
+    text-align: left;    
 }

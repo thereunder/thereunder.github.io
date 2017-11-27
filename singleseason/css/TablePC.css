@@ -127,6 +127,11 @@
     margin: auto;
 }
 
+#map2{
+    height: 300px;
+    width: 100%
+}
+
 .tashop .word{    
     width: 100%;
     padding: 0 20px;
@@ -148,3 +153,4 @@
     line-height: 100px;
     margin: 0;
 }
+

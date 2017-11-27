@@ -112,7 +112,7 @@
             }            
         }
         
-        @media screen and (min-width: 1024px){
+        @media screen and (min-width: 1024px) and (min-width:767px){
             #ta{
                 display: none;
             }            
@@ -141,7 +141,7 @@
         
         .index .unslider-arrow{
             top: 600px;   
-            color: rgb(59, 59, 34) !important;         
+            color: rgb(156, 156, 6) !important;         
         }
 
         @media screen and (max-width: 1023px){
@@ -357,6 +357,10 @@
         @media screen and (max-width: 1023px){
             #pc{
                 display: none;
+            }
+
+            #map{
+                display: block;
             }
         }
 
@@ -609,6 +613,7 @@
         <div class="tashop">
             <div class="title"><img src="img/TITLE_04_TA.png" alt=""></div>            
             <div class="contain">
+                <div id="map2"></div>
                 <div class="word">
                     <img src="img/TITLE_04-1_TA.png" alt="">
                     <p>
@@ -655,6 +660,10 @@
             var uluru = { lat: 24.104227, lng: 120.683524 };
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 16,
+                center: uluru
+            });
+            var map = new google.maps.Map(document.getElementById('map2'), {
+                zoom: 15,
                 center: uluru
             });
             var marker = new google.maps.Marker({

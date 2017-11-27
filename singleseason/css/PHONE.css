@@ -102,13 +102,13 @@
 }
 
 .phnew .thing span{
-    font-size: 16px;
+    font-size: 16pt;
     font-weight: bold;
     line-height: 0.5;            
 }
 
 .phnew .thing p{
-    font-size: 10px;
+    font-size: 10pt;
     font-weight: normal;
     color: rgb(163, 96, 44);  
     margin: 0;    

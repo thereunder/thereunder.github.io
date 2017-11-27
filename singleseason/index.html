@@ -42,13 +42,26 @@
             box-shadow: 0 2px 12px -2px rgb(58, 57, 35);
         }
 
+        @media screen and (max-width: 1023px){
+            .navbar .reallogonav{
+                margin-left: 30px;
+            }
+        }
+
+        @media screen and (max-width: 767px){
+            .navbar .reallogonav img{
+                width: auto;
+                height: 61px;
+            }            
+        }
+
         .navbar .nav-item{
             font-size: 20px;
             font-weight: bold;
             margin-left: 15px;
             height: 40px;     
             cursor: pointer; 
-            margin-top: 15px;      
+            margin-top: 15px;
         }
 
         .navbar .nav-item img{
@@ -112,7 +125,13 @@
         .index{
             margin-top: 100px;
             text-align: center;
-        }        
+        }
+        
+        @media screen and (max-width: 767px){
+            .index{
+                margin-top: 61px;                
+            }
+        }
 
         @media screen and (max-width: 1023px){
             .index .title{
@@ -144,8 +163,14 @@
         @media screen and (max-width: 1023px){
             .index .my-slider img{
                 width: 768px;
-                height: auto;
-                min-width: 768px;
+                height: auto;                
+            }
+        }
+
+        @media screen and (max-width: 768px){
+            .index .my-slider img{
+                width: 320px;
+                height: auto;                
             }
         }
         
@@ -350,6 +375,7 @@
             border-radius: 50%;
             font-family: Castellar;
             z-index: 7000;
+            display: none;
         }
 
         .top:hover {
@@ -366,11 +392,7 @@
         @media screen and (max-width: 1023px){
             #pc{
                 display: none;
-            }
-
-            #map{
-                display: block;
-            }
+            }            
         }
 
         @media screen and (min-width: 1024px){
@@ -379,9 +401,22 @@
             }
         }
 
+        @media screen and (max-width: 767px){
+            #table{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 768px){
+            #phone{
+                display: none;
+            }
+        }
+
     </style>
     
     <link rel="stylesheet" href="css/TablePC.css">
+    <link rel="stylesheet" href="css/PHONE.css">
 
 
 </head>
@@ -392,7 +427,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark" style=" background-color:rgb(252, 255, 146)">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <a href="https://thereunder.github.io/singleseason/"><img class="logo" src="img/logo-s.png" alt=""></a> 
+                <a class="reallogonav" href="https://thereunder.github.io/singleseason/"><img class="logo" src="img/logo-s.png" alt=""></a> 
             </a>
             <button class="hamburger hamburger--spin " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="hamburger-box">
@@ -445,7 +480,7 @@
     
 <!-- 首頁標題+SLIDER部分 -->
     <div class="index">
-        <div class="title"><img id="pc" src="img/TITLE_00_PC.png" alt=""><img id="ta" src="img/TITLE_00_TA.png" alt=""></div>        
+        <div class="title"><img id="pc" src="img/TITLE_00_PC.png" alt=""><img id="table" src="img/TITLE_00_TA.png" alt=""><img id="phone" src="img/TITLE_00_PH.png" alt=""></div>        
         <div class="my-slider">
             <ul>                
                 <li><img src="img/slider1-s.jpg" alt=""></li>
@@ -643,6 +678,53 @@
             <p>Copyright © 2016 Single Season Cake Co.,Ltd</p>
         </div>
     
+    </div>
+
+    <!-- Phone -->
+    <div id="phone">
+    <!-- 本季蛋糕部分 -->
+        <div class="phpru">        
+            <div class="title"><img src="img/TITLE_01_PH.png"alt=""></div>                   
+            <div class="contain">
+
+                <div class="card">
+                    <div class="pic">
+                        <img src="img/proph-07-s.jpg" alt="">
+                    </div>
+                    <div class="picword">
+                        <p>蓬鬆海綿蛋糕胚，口感綿密層次多，純手工的紮實，每一口都能帶給您最溫柔的感動。</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="pic">
+                        <img src="img/proph-08-s.jpg" alt="">
+                    </div>
+                    <div class="picword">
+                        <p>精選顆顆飽滿的大湖草莓，酸中帶甜的內餡不斷挑動味蕾，讓幸福在舌尖上跳躍。</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="pic">
+                        <img src="img/proph-09-s.jpg" alt="">
+                    </div>    
+                    <div class="picword">
+                        <p>特製鮮奶油，加入進口瑞士巧克力，香醇略帶苦澀的口感讓蛋糕甜而不膩，嘗起來更加美味。</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="pic">
+                        <img src="img/proph-10-s.jpg" alt="">
+                    </div>
+                    <div class="picword">
+                        <p>特選莓果，香甜帶著微微酸澀，幸福滋味讓人重返初戀時光，在寒冬中回想起掌心的溫暖。</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 
     <script src="js/jquery-3.2.1.min.js"></script>

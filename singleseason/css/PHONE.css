@@ -1,0 +1,36 @@
+.phpru{
+    text-align: center;    
+}
+
+.phpru .contain{
+    width: 100%; 
+    margin: 10px auto;            
+}
+
+.phpru .card{
+    background-color: rgb(249, 248, 207);    
+    width: 350px;
+    margin: 10px auto;
+    height: 120px;    
+}
+
+.phpru .pic{            
+    height: 98px;
+    position: relative;
+    width: 102px;
+    display: inline-block;
+}
+
+.phpru .picword{
+    height: 102px;
+    width: 218px;    
+    display: inline-block;
+    text-align: left;
+}
+
+.phpru .picword p{            
+    color: rgb(14, 39, 63);
+    font-size: 12pt;    
+    margin: 0;
+    font-weight: bold;
+}
